@@ -13,11 +13,11 @@ React (localhost:5173)  --HTTP/JSON-->  Express API (localhost:5000)  --pg.Pool-
 
 - **GitHub Repository:** https://github.com/Aadicharan/eventnest
 - **Live Deployed Application:** Localhost Deployment (Demonstrated in local development environment on `http://localhost:5173` and `http://localhost:5000`)
-- **Master Documentation:** [EventNest_Complete_Guide.md](./EventNest_Complete_Guide.md)
-- **Academic Reports:**
-  - [Backend_Report.pdf](./reports/Backend_Report.pdf) — Back-End Web Development
-  - [FullStack_Report.pdf](./reports/FullStack_Report.pdf) — Full Stack Web Development
-  - [ADBMS_Report.pdf](./reports/ADBMS_Report.pdf) — Advanced Database Systems
+- **Submission Deliverables Directory:** [\`EventNest_Kalvium_Submission/\`](./EventNest_Kalvium_Submission/)
+  - \`AadiCharan_Back-End-Web-Development_MicroProject.zip\` (includes \`Backend_Report.pdf\`)
+  - \`AadiCharan_Full-Stack-Web-Development_MicroProject.zip\` (includes \`FullStack_Report.pdf\`)
+  - \`AadiCharan_Advanced-Database-Systems_MicroProject.zip\` (includes \`ADBMS_Report.pdf\`)
+  - \`SUBMISSION_CHECKLIST.md\` (Pre-flight checklist)
 
 ---
 
