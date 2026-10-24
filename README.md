@@ -11,8 +11,8 @@
 React (localhost:5173)  --HTTP/JSON-->  Express API (localhost:5000)  --pg.Pool-->  PostgreSQL (localhost:5432)
 ```
 
-- **GitHub Repository:** `[Insert GitHub Repository Link Here]`
-- **Live Deployed Application:** `[Insert Deployed Application Link Here — Optional]`
+- **GitHub Repository:** https://github.com/Aadicharan/eventnest
+- **Live Deployed Application:** Localhost Deployment (Demonstrated in local development environment on `http://localhost:5173` and `http://localhost:5000`)
 - **Master Documentation:** [EventNest_Complete_Guide.md](./EventNest_Complete_Guide.md)
 - **Academic Reports:**
   - [Backend_Report.pdf](./reports/Backend_Report.pdf) — Back-End Web Development

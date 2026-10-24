@@ -156,10 +156,9 @@ Each subject report clearly explains how that subject's concepts are implemented
 
 When the 24-hour upload window opens on **26th October**:
 
-1. **Step 1: Fill in Repository Links in `README.md`**
-   - If you have pushed your project to GitHub, open `README.md` and replace `[Insert GitHub Repository Link Here]` with your repo URL (e.g. `https://github.com/AadiCharan/eventnest`).
-   - If deployed (e.g. Vercel or Render), replace `[Insert Deployed Application Link Here — Optional]` with your live URL, or leave it marked as `Localhost Deployment (Demonstrated Locally)`.
-   - Re-run `node scratch/build_submission_zips.js` if you update the README so the ZIPs reflect your updated links.
+1. **Step 1: Repository Links Verified in `README.md`**
+   - GitHub Repository: `https://github.com/Aadicharan/eventnest` (Verified & active).
+   - Deployment Status: `Localhost Deployment` on `http://localhost:5173` and `http://localhost:5000`.
 
 2. **Step 2: Upload Files to the Portal**
    - **For Back-End Web Development:**
