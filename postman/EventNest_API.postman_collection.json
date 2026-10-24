@@ -1,0 +1,191 @@
+{
+  "info": {
+    "name": "EventNest REST API",
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "description": "Postman API collection for EventNest - College Event Registration Platform. Built for Kalvium micro-project submissions at Alliance University.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000/api",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "01. API Info & Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}",
+          "host": ["{{baseUrl}}"]
+        },
+        "description": "Returns API metadata, project description, and available endpoints dictionary."
+      }
+    },
+    {
+      "name": "02. List All Events",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/events",
+          "host": ["{{baseUrl}}"],
+          "path": ["events"]
+        },
+        "description": "Fetches all events sorted chronologically by date and time, with dynamic seat calculation (registered_count, available_seats, is_full)."
+      }
+    },
+    {
+      "name": "03. Get Event by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/events/1",
+          "host": ["{{baseUrl}}"],
+          "path": ["events", "1"]
+        },
+        "description": "Fetches detailed information for a single event by ID including title, description, venue, and remaining capacity."
+      }
+    },
+    {
+      "name": "04. Create New Event",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Cloud Computing & DevOps Workshop\",\n  \"description\": \"Comprehensive hands-on session on Docker containerization, Kubernetes orchestration, and CI/CD pipelines.\",\n  \"date\": \"2026-11-20\",\n  \"time\": \"10:00 AM\",\n  \"venue\": \"Tech Lab 3, 2nd Floor\",\n  \"max_participants\": 40\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/events",
+          "host": ["{{baseUrl}}"],
+          "path": ["events"]
+        },
+        "description": "Creates a new campus event with title, description, date, time, venue, and max_participants. Returns HTTP 201 Created."
+      }
+    },
+    {
+      "name": "05. Create Event - Validation Error (Empty Fields)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"\",\n  \"description\": \"Missing other required fields\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/events",
+          "host": ["{{baseUrl}}"],
+          "path": ["events"]
+        },
+        "description": "Tests request validation when required fields are missing. Expects HTTP 400 Bad Request."
+      }
+    },
+    {
+      "name": "06. Register Student for Event",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"student_name\": \"Aadi Charan\",\n  \"student_email\": \"aadi.charan@college.edu\",\n  \"student_id\": \"CS2024099\",\n  \"event_id\": 1\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/registrations",
+          "host": ["{{baseUrl}}"],
+          "path": ["registrations"]
+        },
+        "description": "Registers a student for an available event. Automatically looks up or creates the student record in PostgreSQL. Returns HTTP 201."
+      }
+    },
+    {
+      "name": "07. Register Student - Duplicate Registration (Conflict)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"student_name\": \"Rahul Sharma\",\n  \"student_email\": \"rahul.sharma@college.edu\",\n  \"student_id\": \"CS2023001\",\n  \"event_id\": 1\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/registrations",
+          "host": ["{{baseUrl}}"],
+          "path": ["registrations"]
+        },
+        "description": "Tests duplicate registration prevention using PostgreSQL unique constraint. Expects HTTP 409 Conflict ('Student is already registered for this event.')."
+      }
+    },
+    {
+      "name": "08. Register Student - Full Event (Capacity Limit)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"student_name\": \"Karan Mehra\",\n  \"student_email\": \"karan.mehra@college.edu\",\n  \"student_id\": \"IT2023019\",\n  \"event_id\": 4\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/registrations",
+          "host": ["{{baseUrl}}"],
+          "path": ["registrations"]
+        },
+        "description": "Tests capacity enforcement when an event has reached max_participants. Expects HTTP 400 Bad Request ('Event is full.')."
+      }
+    },
+    {
+      "name": "09. List All Registrations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/registrations",
+          "host": ["{{baseUrl}}"],
+          "path": ["registrations"]
+        },
+        "description": "Retrieves all registrations joined with students and events tables, sorted by registered_at timestamp descending."
+      }
+    },
+    {
+      "name": "10. Get Non-Existent Event (404 Not Found)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/events/99999",
+          "host": ["{{baseUrl}}"],
+          "path": ["events", "99999"]
+        },
+        "description": "Tests resource not found handling. Expects HTTP 404 Not Found."
+      }
+    }
+  ]
+}
