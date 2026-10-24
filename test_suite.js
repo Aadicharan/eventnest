@@ -15,13 +15,20 @@
 const { Pool } = require('./backend/node_modules/pg');
 require('./backend/node_modules/dotenv').config({ path: './backend/.env' });
 
-const pool = new Pool({
-  host: process.env.PGHOST || 'localhost',
-  port: parseInt(process.env.PGPORT || '5432', 10),
-  user: process.env.PGUSER || 'postgres',
-  password: process.env.PGPASSWORD || 'postgres',
-  database: process.env.PGDATABASE || 'eventnest_db',
-});
+const poolConfig = process.env.DATABASE_URL
+  ? {
+      connectionString: process.env.DATABASE_URL,
+      ssl: { rejectUnauthorized: false },
+    }
+  : {
+      host: process.env.PGHOST || 'localhost',
+      port: parseInt(process.env.PGPORT || '5432', 10),
+      user: process.env.PGUSER || 'postgres',
+      password: process.env.PGPASSWORD || 'postgres',
+      database: process.env.PGDATABASE || 'eventnest_db',
+    };
+
+const pool = new Pool(poolConfig);
 
 const BASE_URL = 'http://localhost:5000/api';
 

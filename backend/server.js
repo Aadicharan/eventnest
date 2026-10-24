@@ -7,8 +7,12 @@ const PORT = process.env.PORT || 5000;
 // Test DB Connection before starting the HTTP server
 db.query('SELECT NOW()')
   .then((res) => {
-    console.log(`Connected to PostgreSQL database at ${process.env.PGHOST || 'localhost'}:${process.env.PGPORT || 5432}`);
-    console.log(`Database: ${process.env.PGDATABASE || 'eventnest_db'}`);
+    if (process.env.DATABASE_URL) {
+      console.log('Connected to PostgreSQL database via DATABASE_URL (Cloud Hosted)');
+    } else {
+      console.log(`Connected to PostgreSQL database at ${process.env.PGHOST || 'localhost'}:${process.env.PGPORT || 5432}`);
+      console.log(`Database: ${process.env.PGDATABASE || 'eventnest_db'}`);
+    }
     
     app.listen(PORT, () => {
       console.log(`EventNest backend server running on http://localhost:${PORT}`);
