@@ -8,16 +8,20 @@
 **Stack:** React 19 (Vite) • Node.js + Express • PostgreSQL 18 • node-postgres (`pg`) • Vanilla CSS
 
 ```
-React (localhost:5173)  --HTTP/JSON-->  Express API (localhost:5000)  --pg.Pool-->  PostgreSQL (localhost:5432)
+Frontend (Vercel)  --HTTPS/JSON-->  Express REST API (Render)  --SSL/pg.Pool-->  PostgreSQL (Neon Cloud)
+https://eventnest-aadicharan.vercel.app  -->  https://eventnest-5nkj.onrender.com  -->  AWS us-east-2
 ```
 
 - **GitHub Repository:** https://github.com/Aadicharan/eventnest
-- **Live Deployed Application:** Localhost Deployment (Demonstrated in local development environment on `http://localhost:5173` and `http://localhost:5000`)
-- **Submission Deliverables Directory:** [\`EventNest_Kalvium_Submission/\`](./EventNest_Kalvium_Submission/)
-  - \`AadiCharan_Back-End-Web-Development_MicroProject.zip\` (includes \`Backend_Report.pdf\`)
-  - \`AadiCharan_Full-Stack-Web-Development_MicroProject.zip\` (includes \`FullStack_Report.pdf\`)
-  - \`AadiCharan_Advanced-Database-Systems_MicroProject.zip\` (includes \`ADBMS_Report.pdf\`)
-  - \`SUBMISSION_CHECKLIST.md\` (Pre-flight checklist)
+- **Live Deployed Frontend Web App:** https://eventnest-aadicharan.vercel.app (Direct Deployment: https://eventnest-jhhvehpgp-aadicharan.vercel.app)
+- **Live Deployed Backend REST API:** https://eventnest-5nkj.onrender.com (Health check: https://eventnest-5nkj.onrender.com/api, Events: https://eventnest-5nkj.onrender.com/api/events)
+- **Cloud Database:** Neon Serverless PostgreSQL (AWS us-east-2, SSL Secured)
+- **Local Fallback:** Demonstrated in local development environment on `http://localhost:5173` and `http://localhost:5000`
+- **Submission Deliverables Directory:** [`EventNest_Kalvium_Submission/`](./EventNest_Kalvium_Submission/)
+  - `AadiCharan_Back-End-Web-Development_MicroProject.zip` (includes `Backend_Report.pdf`)
+  - `AadiCharan_Full-Stack-Web-Development_MicroProject.zip` (includes `FullStack_Report.pdf`)
+  - `AadiCharan_Advanced-Database-Systems_MicroProject.zip` (includes `ADBMS_Report.pdf`)
+  - `SUBMISSION_CHECKLIST.md` (Pre-flight checklist)
 
 ---
 

@@ -29,7 +29,10 @@
 - [x] **Alliance University Cover Page Format:** Authentic crest logo, student details, course title, certificate, and student declaration.
 - [x] **Mandatory Project Links:**
   - GitHub Repository: https://github.com/Aadicharan/eventnest (Verified active and in sync)
-  - Deployed Application Status: Documented as Localhost Deployment (`http://localhost:5173` / `http://localhost:5000`) with full production-ready environment configuration.
+  - Deployed Frontend Web App: https://eventnest-aadicharan.vercel.app / https://eventnest-jhhvehpgp-aadicharan.vercel.app (Hosted on Vercel)
+  - Deployed Backend REST API: https://eventnest-5nkj.onrender.com (Hosted on Render, verified live)
+  - Production Cloud Database: Neon Serverless PostgreSQL (Verified live, 100% test suite passing)
+  - Localhost Fallback: Documented for local runs on `http://localhost:5173` and `http://localhost:5000`
 - [x] **Visual Evidence & Screenshots:** 11 genuine screenshots of the running application included in every ZIP under `screenshots/`.
 - [x] **Security & Credential Protection:**
   - `backend/.env` is 100% excluded from all ZIP files.
