@@ -1,6 +1,6 @@
 # EVENTNEST — Project Status & Quick Reference
 
-> **Student Name:** Aadi Charan (University Roll No: AU2024BCSE109)  
+> **Student Name:** Aadi Charan (University Registration No: 2511021060153)  
 > **Institution:** Alliance School of Advanced Computing, Alliance University  
 > **Academic Year:** 2026–2027  
 > **Project:** EventNest — College Event Registration Platform  
@@ -23,21 +23,21 @@
 
 ## 📦 2. Final Submission ZIP Files (Ready to Upload)
 
-All three subject packages are built, verified, and placed in two convenient locations:
+All three subject packages are audited, verified, and placed in two convenient locations:
 
 ### Location A: Your Computer's `Downloads/` Folder
-1. `C:\Users\C N Aadicharan\Downloads\AadiCharan_Back-End-Web-Development_MicroProject.zip`
-2. `C:\Users\C N Aadicharan\Downloads\AadiCharan_Full-Stack-Web-Development_MicroProject.zip`
-3. `C:\Users\C N Aadicharan\Downloads\AadiCharan_Advanced-Database-Systems_MicroProject.zip`
+1. `C:\Users\C N Aadicharan\Downloads\AadiCharan_Full-Stack-Web-Development_MicroProject_FINAL.zip`
+2. `C:\Users\C N Aadicharan\Downloads\AadiCharan_Back-End-Web-Development_MicroProject_FINAL.zip`
+3. `C:\Users\C N Aadicharan\Downloads\AadiCharan_Advanced-Database-Systems_MicroProject_FINAL.zip`
 
 ### Location B: Project Workspace Folder
 - `c:\Users\C N Aadicharan\Pictures\Event nest\EventNest_Kalvium_Submission/`
 
-### What is Inside Each ZIP File:
+### What is Inside Each FINAL ZIP File:
 - ✅ Complete source code (`frontend/`, `backend/`, `database/`, `docs/`, `screenshots/`, `postman/`, `test_suite.js`)
-- ✅ Subject-specific PDF report at root (`Backend_Report.pdf`, `FullStack_Report.pdf`, or `ADBMS_Report.pdf`)
-- ✅ Duplicate report in `reports/` folder
-- ✅ Subject-specific `README.md` with live deployed URLs and run instructions
+- ✅ Exactly ONE official PDF report under `EventNest/reports/` (`FullStack_Report.pdf`, `Backend_Report.pdf`, or `ADBMS_Report.pdf`) with verified TOC, student info (Squad 113, 2511021060153, cn.aadicharan.s.113@kalvium.community, 2026–2027), and faculty mentors
+- ✅ Zero duplicate reports in root
+- ✅ Subject-specific `README.md` with live deployed URLs, verified framework versions, and run instructions
 - ✅ 11 authentic screenshots of the running application
 - 🔒 **Security:** 0 leaked passwords, 0 leaked `.env` files, 0 `node_modules` (100% verified)
 
@@ -47,16 +47,16 @@ All three subject packages are built, verified, and placed in two convenient loc
 
 When your Kalvium submission portal opens:
 1. Log in to your Kalvium student portal.
-2. Under **Back-End Web Development**:
-   - Upload `AadiCharan_Back-End-Web-Development_MicroProject.zip`
+2. Under **Full Stack Web Development**:
+   - Upload `AadiCharan_Full-Stack-Web-Development_MicroProject_FINAL.zip`
    - Paste GitHub URL: `https://github.com/Aadicharan/eventnest`
    - Paste Deployed App URL: `https://eventnest-aadicharan.vercel.app`
-3. Under **Full Stack Web Development**:
-   - Upload `AadiCharan_Full-Stack-Web-Development_MicroProject.zip`
+3. Under **Back-End Web Development**:
+   - Upload `AadiCharan_Back-End-Web-Development_MicroProject_FINAL.zip`
    - Paste GitHub URL: `https://github.com/Aadicharan/eventnest`
    - Paste Deployed App URL: `https://eventnest-aadicharan.vercel.app`
 4. Under **Advanced Database Systems**:
-   - Upload `AadiCharan_Advanced-Database-Systems_MicroProject.zip`
+   - Upload `AadiCharan_Advanced-Database-Systems_MicroProject_FINAL.zip`
    - Paste GitHub URL: `https://github.com/Aadicharan/eventnest`
    - Paste Deployed App URL: `https://eventnest-aadicharan.vercel.app`
 

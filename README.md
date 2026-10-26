@@ -1,11 +1,16 @@
 # EVENTNEST – College Event Registration Platform
 
-> **Student:** Aadi Charan (AU2024BCSE109)  
+> **Student Name:** Aadi Charan (University Registration No: 2511021060153)  
+> **Squad Number:** 113  
+> **College Email:** cn.aadicharan.s.113@kalvium.community  
 > **Institution:** Alliance School of Advanced Computing, Alliance University, Bengaluru  
 > **Academic Year:** 2026–2027  
-> **Micro-Project Submissions:** Back-End Web Development • Full Stack Web Development • Advanced Database Systems  
+> **Faculty Mentors:**
+> - **Full Stack Web Development:** Vaibhav (Faculty Mentor, ASAC)
+> - **Back-End Web Development:** Vishwam U (Faculty Mentor, ASAC)
+> - **Advanced Database Systems:** Moufia Justin (Faculty Mentor, ASAC)
 
-**Stack:** React 19 (Vite) • Node.js + Express • PostgreSQL 18 • node-postgres (`pg`) • Vanilla CSS
+**Stack:** React 19 (Vite 8.3) • Node.js + Express 4.21 • PostgreSQL 18.6 • node-postgres (`pg` v8.13) • Vanilla CSS
 
 ```
 Frontend (Vercel)  --HTTPS/JSON-->  Express REST API (Render)  --SSL/pg.Pool-->  PostgreSQL (Neon Cloud)
@@ -13,14 +18,14 @@ https://eventnest-aadicharan.vercel.app  -->  https://eventnest-5nkj.onrender.co
 ```
 
 - **GitHub Repository:** https://github.com/Aadicharan/eventnest
-- **Live Deployed Frontend Web App:** https://eventnest-aadicharan.vercel.app (Direct Deployment: https://eventnest-jhhvehpgp-aadicharan.vercel.app)
+- **Live Deployed Frontend Web App:** https://eventnest-aadicharan.vercel.app
 - **Live Deployed Backend REST API:** https://eventnest-5nkj.onrender.com (Health check: https://eventnest-5nkj.onrender.com/api, Events: https://eventnest-5nkj.onrender.com/api/events)
 - **Cloud Database:** Neon Serverless PostgreSQL (AWS us-east-2, SSL Secured)
 - **Local Fallback:** Demonstrated in local development environment on `http://localhost:5173` and `http://localhost:5000`
 - **Submission Deliverables Directory:** [`EventNest_Kalvium_Submission/`](./EventNest_Kalvium_Submission/)
-  - `AadiCharan_Back-End-Web-Development_MicroProject.zip` (includes `Backend_Report.pdf`)
-  - `AadiCharan_Full-Stack-Web-Development_MicroProject.zip` (includes `FullStack_Report.pdf`)
-  - `AadiCharan_Advanced-Database-Systems_MicroProject.zip` (includes `ADBMS_Report.pdf`)
+  - `AadiCharan_Full-Stack-Web-Development_MicroProject_FINAL.zip` (includes `./reports/FullStack_Report.pdf`)
+  - `AadiCharan_Back-End-Web-Development_MicroProject_FINAL.zip` (includes `./reports/Backend_Report.pdf`)
+  - `AadiCharan_Advanced-Database-Systems_MicroProject_FINAL.zip` (includes `./reports/ADBMS_Report.pdf`)
   - `SUBMISSION_CHECKLIST.md` (Pre-flight checklist)
 
 ---
@@ -64,7 +69,7 @@ College events like workshops, hackathons, and guest lectures are often organize
 
 ## 3. Prerequisites
 
-- **Node.js 20+ LTS** (Recommended: v22 or v24/v25) — https://nodejs.org
+- **Node.js:** v20+ / v22 (Active LTS) or v25.2.1 (tested Current release) — https://nodejs.org
 - **PostgreSQL 16+** (Recommended: PostgreSQL 18) — https://www.postgresql.org/download/
 - **(Optional) Postman** for API testing — https://www.postman.com/downloads/
 
